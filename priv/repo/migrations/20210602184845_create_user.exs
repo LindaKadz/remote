@@ -2,7 +2,7 @@ defmodule Remote.Repo.Migrations.CreateUser do
   use Ecto.Migration
 
   def change do
-    create_table(:users) do
+    create table(:users) do
       add :points, :integer
 
       timestamps()
