@@ -9,3 +9,13 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Remote.Repo
+alias Remote.Users.User
+alias Remote.Users.UserContext
+
+Repo.delete_all(User)
+
+Enum.each(0..1000000, fn(_) ->
+  UserContext.create_user(%{points: 0})
+end)
