@@ -7,4 +7,10 @@ defmodule Remote.Users.User do
 
     timestamps()
   end
+
+  def changeset(user, params \\ %{}) do
+    user
+    |> cast(params, [:points])
+    |> validate_required(:points)
+  end
 end
