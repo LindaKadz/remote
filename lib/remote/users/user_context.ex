@@ -14,7 +14,7 @@ defmodule Remote.Users.UserContext do
     |> Repo.insert()
   end
 
-  def update_user(%User{} = user, params) do
+  def update_user(user, params) do
     user
     |> User.changeset(params)
     |> Repo.update()
@@ -22,5 +22,14 @@ defmodule Remote.Users.UserContext do
 
   def list_users do
     Repo.all(User, timeout: 1_000_000)
+  end
+
+  def find_users_with_points_greater_than_max_number(max_number) do
+    query =
+      from u in User,
+        where: u.points > ^max_number,
+        limit: 2
+
+    Repo.all(query)
   end
 end
