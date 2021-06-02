@@ -12,6 +12,9 @@ defmodule Remote.Server do
 
   def get_users(pid) do
     GenServer.call(pid, :max)
+  catch
+    :exit, _ ->
+      IO.puts "Yikes, I broke something"
   end
 
   def init(state) do

@@ -14,7 +14,7 @@ defmodule Remote.Users.UserContext do
     |> Repo.insert()
   end
 
-  def update_user(user, params) do
+  def update_user(%User{} = user, params) do
     user
     |> User.changeset(params)
     |> Repo.update()
