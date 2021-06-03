@@ -1,19 +1,17 @@
 # Remote
 
-To start your Phoenix server:
+Hey! Thanks for checking this out 😃
 
+To run the project smoothly, please make sure you have Elixir 1.10.4 (compiled with Erlang/OTP 23)
+
+To run the project and start your Phoenix server:
+  * Clone this project with `git clone **project link**` - choose the link, when you click on the clone button above.
+  * cd into project with `cd remote`
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
+  * Create and migrate your database with `mix ecto.setup` - go get some coffee or a drink, it will take a minute or two.
+  (we have a million records, so seriously, get a drink and let the magic work itself.)
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now, you can use the browser, or postman, or curl and hit the endpoint `http://localhost:4000/` and see that magic you started 😉
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
