@@ -12,7 +12,10 @@ defmodule RemoteWeb.UserController do
       %{users: users, timestamp: timestamp} ->
         render(conn, "index.json", users: users, timestamp: timestamp)
       _ ->
-        render(conn, "error.json")
+        conn
+        |> put_status(:not_found)
+        |> put_view(RemoteWeb.ErrorView)
+        |> render(:"500")
     end
   end
 end
