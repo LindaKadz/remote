@@ -12,6 +12,6 @@ To run the project and start your Phoenix server:
   (we have a million records, so seriously, get a drink and let the magic work itself.)
   * Start Phoenix endpoint with `mix phx.server`
 
-Now, you can use the browser, or postman, or curl and hit the endpoint `http://localhost:4000/` and see that magic you started 😉
+Now, you can use the browser, or postman, or curl and hit the endpoint `http://localhost:3000/` and see that magic you started 😉
 
 
